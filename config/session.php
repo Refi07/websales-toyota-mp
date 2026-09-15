@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'database'),
+    'driver' => env('SESSION_DRIVER') ?: 'array',
 
     /*
     |--------------------------------------------------------------------------
@@ -231,3 +231,4 @@ return [
     'serialization' => 'json',
 
 ];
+
